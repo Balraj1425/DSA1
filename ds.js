@@ -24,3 +24,13 @@ searchMissingNum(arr)
 
 let myArr = [0,1,2,3,3,4,4,4,5]
 // output: [0,1,2,3,4,5]
+let newArr = [];
+const removeDuplicate = (myArr) => {
+    for(i=0;i< myArr.length;i++){
+        if(myArr[i] != myArr[i+1]){
+            newArr.push(myArr[i])
+        }
+    }
+    console.log(newArr)
+}
+removeDuplicate(myArr)
